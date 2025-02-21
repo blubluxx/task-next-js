@@ -1,5 +1,11 @@
-import Image from "next/image";
+import StageArea from "@/components/stage/stage-area";
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <main>
+        <StageArea />
+      </main>
+    </>
+  );
 }
