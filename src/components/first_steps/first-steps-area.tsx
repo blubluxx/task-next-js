@@ -1,4 +1,5 @@
 import InfoPanel from "../info_panel/info-panel";
+import BenefitsPanel from "./benefits-panel";
 import FirstStepsPanel from "./first-steps-panel";
 
 const FirstStepsArea = () => {
@@ -10,6 +11,7 @@ const FirstStepsArea = () => {
       <div className="w-[90%] md:bg-transparent bg-gradient-to-r from-white to-[#ecf7ef] md:from-transparent md:to-transparent">
         <InfoPanel />
         <FirstStepsPanel />
+        <BenefitsPanel />
       </div>
     </section>
   );
