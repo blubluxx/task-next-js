@@ -18,7 +18,7 @@ const InfoPanelItem: React.FC<InfoPanelItemProps> = ({
       </div>
       <div>
         <h1 className="mb-2">{title}</h1>
-        <p className="text-green-900 font-medium">{description}</p>
+        <p>{description}</p>
       </div>
     </li>
   );

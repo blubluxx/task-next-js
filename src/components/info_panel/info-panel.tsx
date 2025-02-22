@@ -2,8 +2,8 @@ import InfoPanelItem from "./info-panel-item";
 
 const InfoPanel = () => {
   return (
-    <div className="absolute flex items-center justify-center bottom-0 md:translate-y-24 translate-y-[95%]">
-      <ul className="flex text-left md:flex-row flex-col justify-between items-center w-[90%] p-4 bg-white h-fit rounded-lg shadow-xl">
+    <div className="md:translate-y-[-15%] translate-y-[-5%] ">
+      <ul className="flex text-left md:flex-row flex-col justify-between items-center p-4 bg-white h-fit rounded-lg shadow-lg">
         <InfoPanelItem
           iconSrc="/umbrella-icon.webp"
           iconAlt="easy-registration"
