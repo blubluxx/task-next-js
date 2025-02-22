@@ -19,3 +19,27 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.icon-img {
+  width: 75px;
+}
+
+.item-info-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  padding: 1.3rem;
+  text-wrap: wrap;
+  color: grey;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: fit-content;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .item-info-panel {
+    gap: 0.3rem;
+    padding: 0.5rem;
+  }
+}
