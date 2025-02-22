@@ -1,6 +1,6 @@
 const FirstStepsInfo = () => {
   return (
-    <div className="flex flex-col gap-5 p-5 text-wrap min-h-fit md:text-left text-gray-500 max-w-sm md:mt-0 mt-10">
+    <div className="flex flex-col gap-5 p-5 text-wrap min-h-fit md:text-left text-gray-500 max-w-md md:mt-0 mt-10">
       <h3 className="text-green-700 text-sm">ПЪРВА СТЪПКА</h3>
 
       <h1 className="font-semibold text-3xl">
@@ -10,7 +10,7 @@ const FirstStepsInfo = () => {
       <div>
         <p>
           Лесната регистрация ти дава бърз старт – само няколко стъпки, и вече
-          си на платформата, готов за нови възможности! <br></br> Как работи
+          си на платформата, готов за нови възможности! <br /> Как работи
           платформата:
         </p>
         <ol className="list-decimal list-inside">
