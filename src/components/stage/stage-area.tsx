@@ -11,7 +11,6 @@ const StageArea = () => {
           className="w-screen"
         />
         <Description />
-        <InfoPanel />
       </div>
     </section>
   );
