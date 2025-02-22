@@ -8,10 +8,10 @@ const StageArea = () => {
           <img
             src="/bg-stage-area.webp"
             alt="Stage Area Img"
-            className="w-screen"
+            className="md:w-screen w-fit min-h-full"
           />
         </div>
-        <div className="">
+        <div className="relative md:p-12 p-2 py-7 md:bg-transparent bg-neutral-200">
           <Description />
         </div>
       </div>
