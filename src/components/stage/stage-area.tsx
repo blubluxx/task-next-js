@@ -1,3 +1,4 @@
+import InfoPanel from "../info_panel/info-panel";
 import Description from "./description";
 
 const StageArea = () => {
@@ -11,10 +12,9 @@ const StageArea = () => {
             className="md:w-screen w-fit min-h-full"
           />
         </div>
-        <div className="relative md:p-12 p-2 py-7 md:bg-transparent bg-neutral-200">
-          <Description />
-        </div>
+        <Description />
       </div>
+      <InfoPanel />
     </section>
   );
 };
