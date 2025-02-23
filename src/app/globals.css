@@ -33,32 +33,11 @@ body {
   text-align: center
 }
 
-input[type="text"] {
-  padding: 0.8rem;
-  border-radius: 0.3rem;
-  border: 1px solid #e5e5e5;
-  width: 100%;
-  font-weight: 600;
-  font-size: smaller;
-}
-
 
 input[type="text"]::placeholder {
-  color: #c9d1db;
+  color: #bbbbbb;
 }
 
-.register-form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  width: 80%;
-}
-
-@media (max-width: 768px) {
-  .register-form-group {
-    width: 100%;
-  }
-}
 
 label {
   color: dimgray;

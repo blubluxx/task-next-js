@@ -7,12 +7,12 @@ const InfoPanelItem: React.FC<IPanelItem> = ({
   description,
 }) => {
   return (
-    <li className="flex flex-row gap-1 md:p-4 p-2 text-wrap text-grey-500 text-sm font-semibold w-fit flex-1 ">
+    <li className="flex flex-row gap-2 md:p-4 p-2 text-wrap text-grey-500 flex-1 ">
       <div className="w-fit h-fit">
-        <img src={iconSrc} alt={iconAlt} className="w-24" />
+        <img src={iconSrc} alt={iconAlt} className="w-28" />
       </div>
       <div>
-        <h1 className="mb-2">{title}</h1>
+        <h1 className="mb-4">{title}</h1>
         <p>{description}</p>
       </div>
     </li>

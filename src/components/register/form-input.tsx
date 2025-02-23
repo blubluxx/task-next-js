@@ -4,11 +4,12 @@ const FormInput = (props: IFormFields) => {
   const { name, label, placeholder, errorMsg, register, errors } = props;
 
   return (
-    <div className="register-form-group">
+    <div className="flex flex-col gap-1 md:w-[80%] w-full">
       <label htmlFor={name}>{label}</label>
       <input
         type="text"
         placeholder={placeholder}
+        className="p-4 rounded border-gray-300 w-full text-md font-semibold"
         {...register(name, { required: errorMsg })}
       />
       {errors[name] && <p className="text-red-500">{errors[name]?.message}</p>}
