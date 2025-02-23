@@ -1,11 +1,6 @@
-interface InfoPanelItemProps {
-  iconSrc: string;
-  iconAlt: string;
-  title: string;
-  description: string;
-}
+import { IPanelItem } from "./info-panel";
 
-const InfoPanelItem: React.FC<InfoPanelItemProps> = ({
+const InfoPanelItem: React.FC<IPanelItem> = ({
   iconSrc,
   iconAlt,
   title,
