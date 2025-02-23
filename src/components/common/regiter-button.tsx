@@ -1,8 +1,12 @@
 interface RegisterButtonProps {
   extraStyle?: string;
+  onClick?: () => void;
 }
 
-const RegisterButton: React.FC<RegisterButtonProps> = ({ extraStyle }) => {
+const RegisterButton: React.FC<RegisterButtonProps> = ({
+  extraStyle,
+  onClick,
+}) => {
   return (
     <button
       className={`
@@ -10,6 +14,7 @@ const RegisterButton: React.FC<RegisterButtonProps> = ({ extraStyle }) => {
         h-fit md:rounded-xl rounded-full md:text-neutral-100 text-neutral-600  
         ${extraStyle || ""}
       `}
+      onClick={onClick}
     >
       РЕГИСТРИРАЙТЕ СЕ
     </button>
