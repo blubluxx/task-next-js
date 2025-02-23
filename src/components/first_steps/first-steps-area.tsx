@@ -8,7 +8,7 @@ const FirstStepsArea = () => {
       id="first-steps-area"
       className="flex items-center justify-center min-h-screen"
     >
-      <div className="w-[90%] md:bg-transparent bg-gradient-to-r from-white to-[#ecf7ef] md:from-transparent md:to-transparent">
+      <div className="p-12 md:bg-transparent bg-gradient-to-r from-white to-[#ecf7ef] md:from-transparent md:to-transparent">
         <InfoPanel />
         <FirstStepsPanel />
         <BenefitsPanel />
