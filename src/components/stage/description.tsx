@@ -1,3 +1,5 @@
+import RegisterButton from "../common/regiter-button";
+
 const Description = () => {
   return (
     <div className="md:absolute md:top-1/3 md:left-1/3 md:transform md:-translate-x-2/3 md:-translate-y-1/2 md:w-1/3 md:max-h-min">
@@ -12,9 +14,7 @@ const Description = () => {
             достъп към всички предимства в рамките на първият месец
           </p>
         </div>
-        <button className="md:bg-[#2f325b] bg-yellow-400 md:shadow-sm shadow-[0px_2px_2px_rgba(0,0,0,0.3)] md:p-4 p-3 md:w-2/3 w-[90%] h-fit md:rounded-xl rounded-full md:text-neutral-200 text-neutral-600">
-          РЕГИСТРИРАЙТЕ СЕ
-        </button>
+        <RegisterButton extraStyle="bg-yellow-400" />
       </div>
     </div>
   );
