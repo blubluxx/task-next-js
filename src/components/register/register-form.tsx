@@ -1,7 +1,10 @@
 "use client";
 
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 import RegisterButton from "../common/regiter-button";
+import registerUser from "@/lib/api/auth";
+import { useState } from "react";
 
 interface IFormInput {
   firstName: string;
@@ -13,6 +16,9 @@ interface IFormInput {
 const errorMsg = "Това поле е задължително.";
 
 const RegisterForm = () => {
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+
   const {
     register,
     handleSubmit,
@@ -20,8 +26,14 @@ const RegisterForm = () => {
     reset,
   } = useForm<IFormInput>();
 
-  const onSubmit = (data: IFormInput) => {
-    reset();
+  const onSubmit = async (data: IFormInput) => {
+    try {
+      const authId = await registerUser(data);
+      router.push(`https://ofertirai.me/login?auth_id=${authId}`);
+      reset();
+    } catch (error: any) {
+      setError(error.message);
+    }
   };
 
   return (
@@ -75,8 +87,9 @@ const RegisterForm = () => {
           )}
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-col">
           <RegisterButton extraStyle="w-[90%] text-white mt-4 rounded-10 bg-[#2f325b] rounded-xl" />
+          {error && <p className="text-red-500 p-2">{error}</p>}
         </div>
       </div>
     </form>
@@ -84,3 +97,4 @@ const RegisterForm = () => {
 };
 
 export default RegisterForm;
+export type { IFormInput };
