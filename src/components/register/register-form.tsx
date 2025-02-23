@@ -55,6 +55,7 @@ const RegisterForm = () => {
   } = useForm<IFormInput>();
 
   const onSubmit: SubmitHandler<IFormInput> = async (data: IFormInput) => {
+    setError(null);
     try {
       const authId = await registerUser(data);
       router.push(`https://ofertirai.me/login?auth_id=${authId}`);
