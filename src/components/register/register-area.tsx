@@ -4,8 +4,14 @@ import RegisterPanel from "./register-panel";
 const RegisterArea = () => {
   return (
     <section id="register-area">
-      <div className="flex md:flex-row flex-col  justify-center">
-        <div className="flex-1">
+      <div
+        className="
+        sm:flex sm:flex-col 
+        md:grid md:grid-cols-2
+        justify-center 
+      "
+      >
+        <div className="lg:w-1/2 sm:flex-1">
           <img
             src="/register-area.webp"
             alt="register"
