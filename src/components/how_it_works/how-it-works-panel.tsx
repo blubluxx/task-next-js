@@ -30,7 +30,12 @@ const items: IPanelItem[] = [
 
 const HowItWorksPanel = () => {
   return (
-    <ul className="flex md:flex-row flex-col justify-between p-5">
+    <ul
+      className="
+    md:flex md:gap-10 md:p-1 md:flex-row 
+    sm:grid sm:grid-cols-2 
+    justify-between p-5"
+    >
       {items.map((item) => (
         <HowItWorksItem
           key={item.title}
