@@ -5,8 +5,18 @@ import { scrollTo } from "../../utils/utils";
 
 const Description = () => {
   return (
-    <div className="md:absolute md:top-[10vh] md:left-[10vw] md:min-w-[35vw] max-w-min">
-      <div className="md:bg-white bg-[#bdbbaf] md:bg-opacity-60 flex flex-col  md:gap-12 gap-8 justify-center items-center text-neutral-600 md:rounded-3xl p-8 font-bold text-opacity-90 text-xl">
+    <div
+      className="
+      md:absolute md:top-[10vh] md:left-[10vw] md:min-w-[35vw] md:max-w-[34vw]
+      "
+    >
+      <div
+        className="
+        md:bg-white md:bg-opacity-60 md:gap-12 md:rounded-3xl
+        bg-[#bdbbaf] flex flex-col gap-8 p-8 w-full
+        justify-center items-center 
+        text-neutral-600 font-bold text-opacity-90 text-xl"
+      >
         <h1 className="lg:text-5xl md:text-3xl sm:text-2xl text-center md:p-0 px-8">
           ГРАБНИ НОВИ КЛИЕНТИ ЗА ТВОИТЕ УСЛУГИ.
         </h1>
@@ -18,7 +28,7 @@ const Description = () => {
           </p>
         </div>
         <RegisterButton
-          extraStyle="bg-yellow-400"
+          extraStyle="bg-yellow-400 sm:max-w-[70vw]"
           onClick={() => scrollTo("register-area")}
         />
       </div>
