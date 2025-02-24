@@ -67,7 +67,7 @@ const RegisterForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex flex-col gap-4 md:pb-0 pb-5">
+      <div className="flex flex-col gap-4 pb-5 md:pb-0">
         {formFields.map(({ name, label, placeholder }) => (
           <FormInput
             key={name}
@@ -80,7 +80,12 @@ const RegisterForm = () => {
           />
         ))}
 
-        <RegisterButton extraStyle="w-[90%] text-white mt-4 rounded-10 bg-[#2f325b] rounded-xl self-center md:self-start" />
+        <RegisterButton
+          extraStyle="
+          w-[90%] text-white mt-4 bg-[#2f325b] rounded-xl self-center 
+          md:self-start
+        "
+        />
         {error && <p className="text-red-500 p-2">{error}</p>}
       </div>
     </form>

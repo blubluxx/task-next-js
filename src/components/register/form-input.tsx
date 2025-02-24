@@ -4,7 +4,7 @@ const FormInput = (props: IFormFields) => {
   const { name, label, placeholder, errorMsg, register, errors } = props;
 
   return (
-    <div className="flex flex-col gap-1 md:w-[80%] w-full">
+    <div className="flex flex-col gap-1 w-full md:w-[80%]">
       <label htmlFor={name}>{label}</label>
       <input
         type="text"

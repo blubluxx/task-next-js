@@ -2,9 +2,15 @@ import RegisterForm from "./register-form";
 
 const RegisterPanel = () => {
   return (
-    <div className="md:p-16 p-2 bg-[#e3eeed] lg:w-1/2 sm:flex-1">
+    <div
+      className="
+      sm:flex-1 sm:p-7
+      md:p-16 
+      p-2 bg-[#e3eeed]
+        "
+    >
       <div className="p-6">
-        <h1 className="font-semibold text-4xl md:text-left text-center text-gray-600">
+        <h1 className="font-semibold text-center text-4xl md:text-left text-gray-600">
           РЕГИСТРИРАЙТЕ СЕ
         </h1>
       </div>

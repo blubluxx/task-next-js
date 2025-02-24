@@ -8,10 +8,10 @@ const RegisterArea = () => {
         className="
         sm:flex sm:flex-col 
         md:grid md:grid-cols-2
-        justify-center 
-      "
+        justify-center
+        "
       >
-        <div className="lg:w-1/2 sm:flex-1">
+        <div className="sm:flex-1">
           <img
             src="/register-area.webp"
             alt="register"
