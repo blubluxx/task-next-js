@@ -21,7 +21,13 @@ const FinalCallPanel = () => {
       </p>
       <RegisterButton
         onClick={() => scrollTo("register-area")}
-        extraStyle="bg-[#2f325b] md:rounded-2xl lg:w-3/4 sm:w-1/2 sm:text-sm lg:text-lg xs:self-center md:self-start"
+        extraStyle="
+        bg-[#2f325b] 
+        md:rounded-2xl md:self-start
+        lg:w-3/4 lg:text-lg
+        sm:w-1/2 sm:text-sm 
+        xs:self-center 
+      "
       />
     </div>
   );

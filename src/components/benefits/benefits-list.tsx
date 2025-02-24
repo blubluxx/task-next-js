@@ -20,7 +20,12 @@ const BenefitsList = () => {
         {benefits.map((benefit, index) => (
           <li
             key={index}
-            className="border border-white rounded-xl py-2 px-16 text-center xs:w-[90%] self-center md:w-full"
+            className="
+            self-center py-2 px-16 text-center 
+            border border-white rounded-xl 
+            md:w-full
+            xs:w-[90%] 
+            "
           >
             {benefit}
           </li>

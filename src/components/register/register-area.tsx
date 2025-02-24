@@ -6,9 +6,9 @@ const RegisterArea = () => {
     <section id="register-area">
       <div
         className="
-        sm:flex sm:flex-col 
-        md:grid md:grid-cols-2
         justify-center
+        md:grid md:grid-cols-2
+        sm:flex sm:flex-col 
         "
       >
         <div className="sm:flex-1">
