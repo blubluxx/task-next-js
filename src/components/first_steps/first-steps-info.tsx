@@ -1,19 +1,21 @@
 const FirstStepsInfo = () => {
   return (
-    <div className="flex flex-col gap-5 p-5 text-wrap h-full md:text-left text-gray-500 max-w-lg md:mt-0 mt-10 ">
-      <h3 className="text-green-500 text-md">ПЪРВА СТЪПКА</h3>
+    <div className="flex flex-col gap-5 p-5 h-full text-gray-500 max-w-lg md:mt-0 mt-10">
+      <h3 className="text-green-500 text-sm sm:text-md font-medium">
+        ПЪРВА СТЪПКА
+      </h3>
 
-      <h1 className="font-semibold text-5xl">
+      <h1 className="font-semibold text-3xl xs:text-4xl sm:text-5xl text-gray-700">
         Направи първа стъпка за да се регистрираш.
       </h1>
 
-      <div className="text-xl">
-        <p>
+      <div className="text-base sm:text-xl space-y-2">
+        <p className="mb-2">
           Лесната регистрация ти дава бърз старт – само няколко стъпки, и вече
-          си на платформата, готов за нови възможности! <br /> Как работи
-          платформата:
+          си на платформата, готов за нови възможности!
         </p>
-        <ol className="list-decimal list-inside">
+        <p className="font-medium">Как работи платформата:</p>
+        <ol className="list-decimal pl-5 space-y-2">
           <li>Попълнете профила си и публикувайте услуги.</li>
           <li>Запознайте се с публикуваните оферти и изберете подходящите.</li>
           <li>
@@ -22,7 +24,7 @@ const FirstStepsInfo = () => {
           </li>
           <li>
             Изпълнете сключеното споразумение и получете отзив, който вдига
-            рейтинга Ви.*
+            рейтинга Ви.
           </li>
         </ol>
       </div>
