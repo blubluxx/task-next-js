@@ -7,7 +7,7 @@ const Description = () => {
   return (
     <div
       className="
-      md:absolute md:top-[10vh] md:left-[10vw] md:min-w-[35vw] md:max-w-[34vw]
+      md:absolute md:top-[10vh] md:left-[10vw] md:max-w-[35vw]
       "
     >
       <div
@@ -15,12 +15,12 @@ const Description = () => {
         md:bg-white md:bg-opacity-60 md:gap-12 md:rounded-3xl
         bg-[#bdbbaf] flex flex-col gap-8 p-8 w-full
         justify-center items-center 
-        text-neutral-600 font-bold text-opacity-90 text-xl"
+        text-neutral-600 font-bold text-opacity-90"
       >
-        <h1 className="lg:text-5xl md:text-3xl sm:text-2xl text-center md:p-0 px-8">
+        <h1 className="lg:text-5xl md:text-2xl sm:text-2xl text-center md:p-0 px-8">
           ГРАБНИ НОВИ КЛИЕНТИ ЗА ТВОИТЕ УСЛУГИ.
         </h1>
-        <div className="md:text-left text-center">
+        <div className="md:text-left text-center lg:text-xl text-sm">
           <p>Предоставяте услуги в бюти индустрията?</p>
           <p>
             Регистрирайте се бързо и лесно в платформата и вземете БЕЗПЛАТЕН
@@ -28,8 +28,13 @@ const Description = () => {
           </p>
         </div>
         <RegisterButton
-          extraStyle="bg-yellow-400 sm:max-w-[70vw] md:rounded-xl xs:text-gray-500 md:text-white"
           onClick={() => scrollTo("register-area")}
+          extraStyle="
+          bg-yellow-400 text-sm
+          md:rounded-xl md:text-white
+          sm:max-w-[70vw] 
+          xs:text-gray-500 
+          "
         />
       </div>
     </div>
