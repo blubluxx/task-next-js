@@ -16,7 +16,12 @@ const links: ILink[] = [
 const FooterLinks = () => {
   return (
     <div className="w-full md:w-auto">
-      <ul className="flex flex-col md:flex-row p-8 font-light w-full items-center justify-between text-md">
+      <ul
+        className="
+        flex w-full text-md
+        md:flex-row justify-between md:p-8 
+        flex-col font-thin text-sm"
+      >
         {links.map((link) => (
           <li key={link.title}>
             <Link href={link.url}>{link.title}</Link>

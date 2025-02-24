@@ -34,7 +34,7 @@ const links: ILink[] = [
   },
 ];
 
-const style: string = "w-24 h-24";
+const style: string = "md:w-24 md:h-24 w-12 h-12";
 
 const Socials = () => {
   return (
