@@ -82,7 +82,8 @@ const RegisterForm = () => {
 
         <RegisterButton
           extraStyle="
-          w-[90%] text-white mt-4 bg-[#2f325b] rounded-xl self-center 
+          bg-[#2f325b] w-[90%] mt-4 self-center 
+          sm:rounded-xl 
           md:self-start
         "
         />

@@ -28,7 +28,7 @@ const Description = () => {
           </p>
         </div>
         <RegisterButton
-          extraStyle="bg-yellow-400 sm:max-w-[70vw]"
+          extraStyle="bg-yellow-400 sm:max-w-[70vw] md:rounded-xl xs:text-gray-500 md:text-white"
           onClick={() => scrollTo("register-area")}
         />
       </div>
