@@ -32,6 +32,7 @@ const HowItWorksPanel = () => {
   return (
     <ul
       className="
+        xs:m-4
         sm:grid sm:grid-cols-2 sm:p-1
         md:flex md:gap-10 md:p-1 md:flex-row 
         justify-between p-5"

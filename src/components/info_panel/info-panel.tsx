@@ -33,17 +33,19 @@ const items: IPanelItem[] = [
 
 const InfoPanel = () => {
   return (
-    <ul className="flex text-left md:flex-row flex-col justify-between items-center p-8 bg-white h-fit rounded-lg shadow-lg md:-translate-y-16 -translate-y-10 md:m-0 m-5 text-xl gap-10">
-      {items.map((item) => (
-        <InfoPanelItem
-          key={item.title}
-          iconSrc={item.iconSrc}
-          iconAlt={item.iconAlt}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </ul>
+    <div className="bg-white rounded-lg shadow-lg p-6 -translate-y-6 md:-translate-y-16 mx-5">
+      <ul className="flex flex-col md:flex-row gap-8 md:gap-6">
+        {items.map((item) => (
+          <InfoPanelItem
+            key={item.title}
+            iconSrc={item.iconSrc}
+            iconAlt={item.iconAlt}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 

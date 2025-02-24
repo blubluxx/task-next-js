@@ -1,4 +1,3 @@
-import InfoPanel from "../info_panel/info-panel";
 import Description from "./description";
 
 const StageArea = () => {
@@ -8,7 +7,7 @@ const StageArea = () => {
         <img
           src="/bg-stage-area.webp"
           alt="Stage Area Img"
-          className="w-screen"
+          className="w-full"
         />
         <Description />
       </div>
