@@ -7,8 +7,8 @@ const HowItWorksItem: React.FC<IPanelItem> = ({
   description,
 }) => {
   return (
-    <li className="how-it-works-item flex flex-col p-2 items-center text-lg">
-      <div className="text-right w-full ml-4">
+    <li className="how-it-works-item flex flex-col items-center p-2 md:text-lg md:w-2/3 xs:w-1/2">
+      <div className="text-right w-full">
         <h1 className="text-green-500">{title}</h1>
       </div>
       <div className="w-40 h-40">

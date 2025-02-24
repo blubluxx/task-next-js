@@ -32,10 +32,10 @@ const HowItWorksPanel = () => {
   return (
     <ul
       className="
-        xs:m-4
-        sm:grid sm:grid-cols-2 sm:p-1
-        md:flex md:gap-10 md:p-1 md:flex-row 
-        justify-between p-5"
+        xs:gap-3 xs:flex-col xs:justify-items-center
+        sm:grid sm:grid-cols-2 sm:gap-5 sm:place-items-center
+        md:gap-10 md:flex md:flex-row 
+        justify-between p-4"
     >
       {items.map((item) => (
         <HowItWorksItem
