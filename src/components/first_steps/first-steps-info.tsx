@@ -1,3 +1,17 @@
+/**
+ * A component that renders a section
+ * providing information about the first steps to register on the platform.
+ *
+ * The component includes:
+ * - A heading indicating the first step.
+ * - A main title encouraging the user to take the first step to register.
+ * - A description explaining the ease of registration and the benefits.
+ * - An ordered list detailing the steps to use the platform effectively.
+ *
+ *
+ * @returns {JSX.Element} The rendered component.
+ */
+
 const FirstStepsInfo = () => {
   return (
     <div className="flex flex-col gap-5 p-5 h-full text-gray-500 max-w-lg md:mt-0 mt-10">

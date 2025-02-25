@@ -1,5 +1,11 @@
 import RegisterForm from "./register-form";
 
+/**
+ * RegisterPanel component renders a registration panel with a title and a registration form.
+ *
+ * @returns {JSX.Element} The rendered registration panel component.
+ */
+
 const RegisterPanel = () => {
   return (
     <div

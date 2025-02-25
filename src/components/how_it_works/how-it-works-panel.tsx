@@ -28,6 +28,12 @@ const items: IPanelItem[] = [
   },
 ];
 
+/**
+ * A functional component that renders a list of "How It Works" items.
+ *
+ * @returns {JSX.Element} A list of "How It Works" items.
+ */
+
 const HowItWorksPanel = () => {
   return (
     <ul

@@ -43,6 +43,18 @@ const formFields: IFormField[] = [
 
 const errorMsg = "Това поле е задължително.";
 
+/**
+ * RegisterForm component handles the user registration process.
+ * It uses the `useForm` hook from `react-hook-form` to manage form state and validation.
+ * On form submission, it attempts to register the user and redirects to the login page upon success.
+ *
+ * @returns {JSX.Element} The rendered RegisterForm component.
+ *
+ * @remarks
+ * This component uses the `useRouter` hook from `next/router` for navigation.
+ * It also uses a custom `registerUser` function to handle the registration logic.
+ */
+
 const RegisterForm = () => {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);

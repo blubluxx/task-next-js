@@ -3,6 +3,15 @@
 import RegisterButton from "../common/register-button";
 import { scrollTo } from "../../utils/utils";
 
+/**
+ * A component that renders a panel with a title, description, and a register button.
+ *
+ * @returns {JSX.Element} A JSX element containing the final call panel.
+ *
+ * @remarks
+ * The `RegisterButton` component is used to trigger a scroll action to the registration area.
+ */
+
 const FinalCallPanel = () => {
   return (
     <div className="flex flex-col text-gray-600 gap-7 max-w-md py-10">

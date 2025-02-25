@@ -6,6 +6,15 @@ const benefits: string[] = [
   "Развитие на бизнеса – разширяваш обхвата и намираш нови партньори",
 ];
 
+/**
+ * A component that renders a list of benefits.
+ * 
+ * The component includes a title and an image.
+ * 
+ * @returns {JSX.Element} A JSX element containing the benefits list.
+
+ */
+
 const BenefitsList = () => {
   return (
     <div className="bg-[#545756] text-neutral-200 md:p-20 md:py-16 p-4 flex-1">

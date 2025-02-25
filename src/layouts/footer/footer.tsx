@@ -5,6 +5,21 @@ import Socials from "./socials";
 import FooterLogo from "./footer-logo";
 import FooterMobile from "../footer-mobile/footer-mobile";
 
+/**
+ * Footer component that renders the footer section of the application.
+ *  *
+ * - On medium and larger screens, the footer displays:
+ *   - FooterLogo component
+ *   - FooterLinks component
+ *   - Socials component
+ *
+ * - On smaller screens, the footer displays:
+ *   - FooterLogo component
+ *   - FooterMobile component
+ *
+ * @returns {JSX.Element} The rendered footer component.
+ */
+
 const Footer = () => {
   return (
     <footer id="footer">

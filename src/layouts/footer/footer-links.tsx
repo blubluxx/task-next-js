@@ -13,6 +13,13 @@ const links: ILink[] = [
   { title: "Pricing", url: "#" },
 ];
 
+/**
+ * FooterLinks component renders a list of links in the footer section.
+ *
+ * @returns {JSX.Element} A div containing an unordered list of links. *
+ *
+ */
+
 const FooterLinks = () => {
   return (
     <div className="w-full">

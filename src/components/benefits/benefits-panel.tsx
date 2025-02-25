@@ -1,5 +1,12 @@
 import BenefitsList from "./benefits-list";
 
+/**
+ * BenefitsArea component renders a section containing a list of benefits and a promotional message.
+ *
+ * @returns {JSX.Element} The JSX code for the benefits area section.
+ *
+ */
+
 const BenefitsArea = () => {
   return (
     <section id="benefits-area">

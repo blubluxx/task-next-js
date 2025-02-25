@@ -1,6 +1,13 @@
 import MobileFooterLinks from "./mobile-links";
 import MobileSocials from "./mobile-socials";
 
+/**
+ * FooterMobile component renders the mobile version of the footer.
+ * It includes social media links, footer links, and contact information.
+ *
+ * @returns {JSX.Element} The rendered mobile footer component.
+ */
+
 const FooterMobile = () => {
   return (
     <div className="flex flex-col h-full py-10 gap-8">

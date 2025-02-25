@@ -3,6 +3,13 @@
 import RegisterButton from "../common/register-button";
 import { scrollTo } from "../../utils/utils";
 
+/**
+ * The `Description` component renders a section with a heading and descriptive text.
+ * It includes a call-to-action button for users to register.
+ *
+ * @returns {JSX.Element} A JSX element containing the description section.
+ */
+
 const Description = () => {
   return (
     <div

@@ -1,3 +1,9 @@
+/**
+ * Visuals2 component renders an image.
+ *
+ * @returns A JSX element containing a div with an image.
+ */
+
 const Visuals2 = () => {
   return (
     <div className="relative flex flex-row justify-center items-center h-fit">

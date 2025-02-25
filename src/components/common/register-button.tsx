@@ -1,3 +1,14 @@
+/**
+ * RegisterButton component
+ * @description Button for registration
+ * @param {string} extraStyle - Additional styles for the button
+ * @param {function} onClick - Function to be called when the button is clicked
+ * @returns {JSX.Element} - Rendered RegisterButton component
+ * @example
+ * <RegisterButton extraStyle="text-lg" onClick={() => console.log("Button clicked")} />
+ *
+ */
+
 interface RegisterButtonProps {
   extraStyle?: string;
   onClick?: () => void;

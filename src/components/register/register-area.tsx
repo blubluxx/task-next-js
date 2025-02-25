@@ -1,5 +1,11 @@
 import RegisterPanel from "./register-panel";
 
+/**
+ * A component that renders a section containing an image and a registration panel.
+ *
+ * @returns {JSX.Element} The JSX code for the register area section.
+ */
+
 const RegisterArea = () => {
   return (
     <section id="register-area">

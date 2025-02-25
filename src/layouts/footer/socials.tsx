@@ -34,6 +34,13 @@ const links: ILink[] = [
   },
 ];
 
+/**
+ * A functional component that renders a list of social media links.
+ * Each link is represented by an image.
+ *
+ * @returns {JSX.Element} A div containing the social media links.
+ */
+
 const Socials = () => {
   return (
     <div className="flex gap-4 items-start w-fit ml-6 mt-8">

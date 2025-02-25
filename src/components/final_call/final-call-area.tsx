@@ -1,6 +1,15 @@
 import FinalCallPanel from "./final-call-panel";
 import FinalCallVisual from "./final-call-visual";
 
+/**
+ * FinalCallArea component renders a section displaying a summary of
+ * the benefits of using the platform.
+ *
+ * This section contains two components: FinalCallPanel and FinalCallVisual
+ *
+ * @returns {JSX.Element} The rendered FinalCallArea component.
+ */
+
 const FinalCallArea = () => {
   return (
     <section id="final-call">

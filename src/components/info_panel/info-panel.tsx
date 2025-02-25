@@ -7,6 +7,17 @@ interface IPanelItem {
   description: string;
 }
 
+/**
+ * This component displays panel items informing the user of the main benefits of using the platform..
+ * Each item contains an icon, title, and description.
+ *
+ * @type {IPanelItem[]}
+ * @property {string} iconSrc - The source path of the icon image.
+ * @property {string} iconAlt - The alt text for the icon image.
+ * @property {string} title - The title of the panel item.
+ * @property {string} description - The description of the panel item.
+ */
+
 const items: IPanelItem[] = [
   {
     iconSrc: "/umbrella-icon.webp",

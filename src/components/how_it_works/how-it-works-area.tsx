@@ -1,5 +1,12 @@
 import HowItWorksPanel from "./how-it-works-panel";
 
+/**
+ * A component that renders a section
+ * describing how the platform works. It includes a title and a `HowItWorksPanel` component.
+ *
+ * @returns {JSX.Element} A section element with a title and a panel explaining how the platform works.
+ */
+
 const HowItWorksArea = () => {
   return (
     <section id="how-it-works">

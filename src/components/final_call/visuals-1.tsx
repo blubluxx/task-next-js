@@ -1,3 +1,9 @@
+/**
+ * Visuals1 component renders a set of images.
+ *
+ * @returns A JSX element containing a div with multiple images.
+ */
+
 const Visuals1 = () => {
   return (
     <div className="relative flex justify-center items-center">
