@@ -35,7 +35,7 @@ const InfoPanel = () => {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 -translate-y-6 md:-translate-y-16 mx-5">
       <ul className="flex flex-col md:flex-row gap-8 md:gap-6">
-        {items.map((item) => (
+        {items.map((item: IPanelItem) => (
           <InfoPanelItem
             key={item.title}
             iconSrc={item.iconSrc}

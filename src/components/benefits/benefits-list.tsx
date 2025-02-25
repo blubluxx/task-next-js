@@ -17,7 +17,7 @@ const BenefitsList = () => {
       </div>
 
       <ul className="flex flex-col gap-3 text-center md:text-xl lg:text-2xl md:mt-6">
-        {benefits.map((benefit, index) => (
+        {benefits.map((benefit: string, index) => (
           <li
             key={index}
             className="

@@ -38,7 +38,7 @@ const HowItWorksPanel = () => {
         xs:gap-3 xs:flex-col xs:justify-items-center
         "
     >
-      {items.map((item) => (
+      {items.map((item: IPanelItem) => (
         <HowItWorksItem
           key={item.title}
           iconSrc={item.iconSrc}

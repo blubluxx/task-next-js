@@ -37,7 +37,7 @@ const links: ILink[] = [
 const Socials = () => {
   return (
     <div className="flex gap-4 items-start w-fit ml-6 mt-8">
-      {links.map((link) => (
+      {links.map((link: ILink) => (
         <Link href={link.href} key={link.title}>
           <img
             src={link.imageSrc}

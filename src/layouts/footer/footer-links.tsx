@@ -22,7 +22,7 @@ const FooterLinks = () => {
         text-sm md:text-lg lg:text-xl
         "
       >
-        {links.map((link) => (
+        {links.map((link: ILink) => (
           <li key={link.title} className="">
             <Link href={link.url}>{link.title}</Link>
           </li>
@@ -33,3 +33,5 @@ const FooterLinks = () => {
 };
 
 export default FooterLinks;
+export type { ILink };
+export { links };
