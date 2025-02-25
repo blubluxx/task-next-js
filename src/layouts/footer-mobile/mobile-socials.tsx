@@ -1,13 +1,7 @@
-interface Icon {
-  src: string;
-  alt: string;
-}
+import Link from "next/link";
 
-const icons: Icon[] = [
-  { src: "/social/facebook-tiny.svg", alt: "Facebook icon by Icons8" },
-  { src: "/social/twitter-tiny.svg", alt: "Twitter Bird icon by Icons8" },
-  { src: "/social/instagram-tiny.svg", alt: "Instagram icon by Icons8" },
-];
+import { socialLinksMobile } from "@/data/components_data";
+import { IconSocial } from "@/data/interfaces";
 
 /**
  * MobileSocials component renders a list of social media icons.
@@ -18,13 +12,15 @@ const icons: Icon[] = [
 const MobileSocials = () => {
   return (
     <div className="flex flex-row h-full w-full justify-start gap-4">
-      {icons.map((icon: Icon, index) => (
+      {socialLinksMobile.map((link: IconSocial, index) => (
         <div key={index} className="h-full">
-          <img
-            src={icon.src}
-            alt={icon.alt}
-            style={{ width: "25px", height: "25px" }}
-          />
+          <Link href={link.href}>
+            <img
+              src={link.imageSrc}
+              alt={link.imageAlt}
+              style={{ width: "25px", height: "25px" }}
+            />
+          </Link>
         </div>
       ))}
     </div>

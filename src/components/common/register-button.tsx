@@ -1,3 +1,6 @@
+import { RegisterButtonProps } from "@/data/interfaces";
+import { JSX } from "react";
+
 /**
  * RegisterButton component
  * @description Button for registration
@@ -9,15 +12,10 @@
  *
  */
 
-interface RegisterButtonProps {
-  extraStyle?: string;
-  onClick?: () => void;
-}
-
 const RegisterButton: React.FC<RegisterButtonProps> = ({
   extraStyle,
   onClick,
-}) => {
+}): JSX.Element => {
   return (
     <button
       className={`

@@ -6,40 +6,8 @@ import RegisterButton from "../common/register-button";
 import { registerUser } from "@/lib/auth";
 import { useState } from "react";
 import FormInput from "./form-input";
-
-interface IFormInput {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-}
-
-interface IFormField {
-  name: keyof IFormInput;
-  label: string;
-  placeholder: string;
-}
-
-interface IFormFields extends IFormField {
-  errorMsg: string;
-  register: any;
-  errors: any;
-}
-
-const formFields: IFormField[] = [
-  { name: "firstName", label: "Име", placeholder: "Въведете Вашето име" },
-  {
-    name: "lastName",
-    label: "Фамилия",
-    placeholder: "Въведете Вашето фамилно име",
-  },
-  { name: "email", label: "Имейл", placeholder: "Въведете своя имейл" },
-  {
-    name: "phone",
-    label: "Мобилен телефон",
-    placeholder: "Въведете номера на мобилния си телефон",
-  },
-];
+import { IFormInput } from "@/data/interfaces";
+import { registerFormFields } from "@/data/components_data";
 
 const errorMsg = "Това поле е задължително.";
 
@@ -80,7 +48,7 @@ const RegisterForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-col gap-4 pb-5 md:pb-0">
-        {formFields.map(({ name, label, placeholder }) => (
+        {registerFormFields.map(({ name, label, placeholder }) => (
           <FormInput
             key={name}
             name={name}
@@ -106,4 +74,3 @@ const RegisterForm = () => {
 };
 
 export default RegisterForm;
-export type { IFormInput, IFormFields };

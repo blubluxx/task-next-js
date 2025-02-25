@@ -1,17 +1,7 @@
 import Link from "next/link";
 
-interface ILink {
-  title: string;
-  url: string;
-}
-
-const links: ILink[] = [
-  { title: "Home", url: "/" },
-  { title: "About us", url: "#" },
-  { title: "Categories", url: "#" },
-  { title: "Create Order", url: "#" },
-  { title: "Pricing", url: "#" },
-];
+import { footerLinksDesktop } from "@/data/components_data";
+import { ILink } from "@/data/interfaces";
 
 /**
  * FooterLinks component renders a list of links in the footer section.
@@ -29,7 +19,7 @@ const FooterLinks = () => {
         text-sm md:text-lg lg:text-xl
         "
       >
-        {links.map((link: ILink) => (
+        {footerLinksDesktop.map((link: ILink) => (
           <li key={link.title} className="">
             <Link href={link.url}>{link.title}</Link>
           </li>
@@ -40,5 +30,3 @@ const FooterLinks = () => {
 };
 
 export default FooterLinks;
-export type { ILink };
-export { links };
