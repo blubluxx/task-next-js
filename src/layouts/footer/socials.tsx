@@ -34,14 +34,16 @@ const links: ILink[] = [
   },
 ];
 
-const style: string = "w-20 h-20";
-
 const Socials = () => {
   return (
-    <div className="flex md:flex-1 gap-4 items-start w-fit ml-6 mt-8">
+    <div className="flex gap-4 items-start w-fit ml-6 mt-8">
       {links.map((link) => (
         <Link href={link.href} key={link.title}>
-          <img src={link.imageSrc} alt={link.imageAlt} className={style} />
+          <img
+            src={link.imageSrc}
+            alt={link.imageAlt}
+            className="max-size-20"
+          />
         </Link>
       ))}
     </div>

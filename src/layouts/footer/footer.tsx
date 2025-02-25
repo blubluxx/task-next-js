@@ -2,39 +2,30 @@ import Link from "next/link";
 
 import FooterLinks from "./footer-links";
 import Socials from "./socials";
+import FooterLogo from "./footer-logo";
 
 const Footer = () => {
   return (
     <footer id="footer">
       <div
         className="
-        bg-[#545756] flex flex-col
-        text-white p-20 w-full h-full
-          md:flex-row
+        bg-[#545756] flex flex-col justify-between
+        w-full h-full text-white gap-12        
+        md:flex-row md:items-center md:p-16
+        p-8
         "
       >
-        <div className="flex flex-col gap-8">
-          <div className="">
-            <img src="/logo.svg" alt="ofertirai-me-logo" />
-          </div>
-          <div className="w-full">
-            <p className="text-sm max-w-xs">
-              Easily solve your problems with our services, accessible from
-              every page on our website.
-            </p>
-          </div>
-          <div className="font-bold text-right">
-            <h3 className="text-lg">Links</h3>
-            <Link className="text-sm" href="#">
-              Terms and conditions
-            </Link>
-          </div>
+        <div className="md:flex h-full">
+          <FooterLogo />
         </div>
-        <FooterLinks />
-        <Socials />
+        <div className="hidden md:flex">
+          <FooterLinks />
+        </div>
+        <div className="hidden md:flex">
+          <Socials />
+        </div>
       </div>
     </footer>
   );
 };
-
 export default Footer;
