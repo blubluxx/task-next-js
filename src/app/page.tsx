@@ -9,7 +9,6 @@ import Footer from "@/layouts/footer/footer";
 export default function Home() {
   return (
     <>
-      {/* <header></header> */}
       <main>
         <StageArea />
         <FirstStepsArea />
