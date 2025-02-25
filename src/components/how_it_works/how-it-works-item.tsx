@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { IPanelItem } from "../info_panel/info-panel";
 
 const HowItWorksItem: React.FC<IPanelItem> = ({
@@ -12,7 +14,7 @@ const HowItWorksItem: React.FC<IPanelItem> = ({
         <h1 className="text-green-500">{title}</h1>
       </div>
       <div className="w-40 h-40">
-        <img src={iconSrc} alt={iconAlt} />
+        <Image src={iconSrc} alt={iconAlt} />
       </div>
       <div>
         <p className=" text-gray-500 font-semibold">{description}</p>

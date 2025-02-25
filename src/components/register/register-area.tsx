@@ -1,4 +1,5 @@
-import exp from "constants";
+import Image from "next/image";
+
 import RegisterPanel from "./register-panel";
 
 const RegisterArea = () => {
@@ -12,7 +13,7 @@ const RegisterArea = () => {
         "
       >
         <div className="sm:flex-1">
-          <img
+          <Image
             src="/register-area.webp"
             alt="register"
             className="object-cover w-full h-full"

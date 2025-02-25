@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface ILink {
@@ -41,7 +42,7 @@ const Socials = () => {
     <div className="flex md:flex-1 gap-4 items-start w-fit ml-6 mt-8">
       {links.map((link) => (
         <Link href={link.href} key={link.title}>
-          <img src={link.imageSrc} alt={link.imageAlt} className={style} />
+          <Image src={link.imageSrc} alt={link.imageAlt} className={style} />
         </Link>
       ))}
     </div>

@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 import Description from "./description";
 
 const StageArea = () => {
   return (
     <section id="stage-area">
       <div className="relative w-full">
-        <img
+        <Image
           src="/bg-stage-area.webp"
           alt="Stage Area Img"
           className="w-full"
