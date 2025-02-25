@@ -2,7 +2,7 @@
 
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
-import RegisterButton from "../common/regiter-button";
+import RegisterButton from "../common/register-button";
 import { registerUser } from "@/lib/auth";
 import { useState } from "react";
 import FormInput from "./form-input";

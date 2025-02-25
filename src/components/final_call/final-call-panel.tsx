@@ -1,6 +1,6 @@
 "use client";
 
-import RegisterButton from "../common/regiter-button";
+import RegisterButton from "../common/register-button";
 import { scrollTo } from "../../utils/utils";
 
 const FinalCallPanel = () => {
