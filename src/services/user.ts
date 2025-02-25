@@ -1,12 +1,12 @@
+import { User } from "@/data/interfaces";
 import { v4 as uuidv4 } from "uuid";
 
-export interface User {
-  id: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-}
+/**
+ * Creates a new user with the provided data.
+ *
+ * @param data - The data for the new user.
+ * @returns A promise that resolves to the created user.
+ */
 
 export const createUser = async (data: any): Promise<User> => {
   return {

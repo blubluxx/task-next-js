@@ -1,9 +1,22 @@
 import { NextResponse } from "next/server";
 import { signToken } from "@/lib/auth";
-import { createUser, User } from "@/services/user";
+import { createUser } from "@/services/user";
 import { JWT_SECRET } from "@/services/server";
+import { User } from "@/data/interfaces";
 
-export async function POST(request: Request) {
+/**
+ * Handles the POST request for user registration.
+ *
+ * @param {Request} request - The incoming request object.
+ * @returns {Promise<Response>} - The response object containing the authentication token or an error message.
+ *
+ * @throws {Error} - Throws an error if there is an issue with the request processing.
+ **
+ * If any required fields are missing, it returns a 400 status with an appropriate message.
+ * If an internal server error occurs, it returns a 500 status with an error message.
+ */
+
+export async function POST(request: Request): Promise<Response> {
   try {
     const body = await request.json();
     const { firstName, lastName, phone, email } = body;
