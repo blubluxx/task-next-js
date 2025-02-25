@@ -11,7 +11,7 @@ const FinalCallArea = () => {
         sm:p-5 md:p-24 
       "
       >
-        <div className="relative flex xs:flex-col md:flex-row sm:gap-18 lg:gap-24">
+        <div className="relative flex xs:flex-col items-center md:flex-row sm:gap-18 lg:gap-24">
           <FinalCallPanel />
           <FinalCallVisual />
         </div>
