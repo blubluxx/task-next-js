@@ -22,7 +22,11 @@ const BenefitsList = () => {
         <h1 className="text-3xl lg:text-4xl font-semibold">
           Предимства които получаваш
         </h1>
-        <img className="w-8 h-8" src="/arrow-icon.webp" alt="arrow-icon" />
+        <img
+          className="w-8 h-8"
+          src="/icons/arrow-icon.webp"
+          alt="arrow-icon"
+        />
       </div>
 
       <ul className="flex flex-col gap-3 text-center md:text-xl lg:text-2xl md:mt-6">

@@ -11,7 +11,7 @@ const StageArea = () => {
     <section id="stage-area">
       <div className="relative w-full">
         <img
-          src="/bg-stage-area.webp"
+          src="/images/bg-stage-area.webp"
           alt="Stage Area Img"
           className="w-full"
         />

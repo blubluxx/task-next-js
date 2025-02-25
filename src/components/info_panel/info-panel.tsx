@@ -20,21 +20,21 @@ interface IPanelItem {
 
 const items: IPanelItem[] = [
   {
-    iconSrc: "/umbrella-icon.webp",
+    iconSrc: "/icons/umbrella-icon.webp",
     iconAlt: "easy-registration",
     title: "Лесна регистрация",
     description:
       "Само няколко стъпки и вече си на платформата, готов за нови възможности!",
   },
   {
-    iconSrc: "/check-icon.webp",
+    iconSrc: "/icons/check-icon.webp",
     iconAlt: "reliable-platform",
     title: "Надеждна Платформата",
     description:
       "Ние се грижим за надеждността, за да можеш ти да се фокусираш върху работата си.",
   },
   {
-    iconSrc: "/wallet-icon.webp",
+    iconSrc: "/icons/wallet-icon.webp",
     iconAlt: "new-clients",
     title: "Нови Клиенти",
     description:

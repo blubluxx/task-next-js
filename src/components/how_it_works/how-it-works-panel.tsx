@@ -3,25 +3,25 @@ import HowItWorksItem from "./how-it-works-item";
 
 const items: IPanelItem[] = [
   {
-    iconSrc: "/create-profile-icon.webp",
+    iconSrc: "/icons/create-profile-icon.webp",
     iconAlt: "create-profile",
     title: "1 стъпка",
     description: "СЪЗДАВАТЕ ПРОФИЛ",
   },
   {
-    iconSrc: "/pick-icon.webp",
+    iconSrc: "/icons/pick-icon.webp",
     iconAlt: "pick-the-right-offer",
     title: "2 стъпка",
     description: "ИЗБИРАТЕ ПОДХОДЯЩА ОФЕРТА",
   },
   {
-    iconSrc: "/coordinate-icon.webp",
+    iconSrc: "/icons/coordinate-icon.webp",
     iconAlt: "coordinate-details",
     title: "3 стъпка",
     description: "СЪГЛАСУВАТЕ ПОДРОБНОСТИТЕ",
   },
   {
-    iconSrc: "/complete-icon.webp",
+    iconSrc: "/icons/complete-icon.webp",
     iconAlt: "complete-order",
     title: "4 стъпка",
     description: "ИЗПЪЛНЯВАТЕ ПОРЪЧКА",

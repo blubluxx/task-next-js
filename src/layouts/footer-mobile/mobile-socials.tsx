@@ -4,9 +4,9 @@ interface Icon {
 }
 
 const icons: Icon[] = [
-  { src: "/facebook-tiny.svg", alt: "Facebook icon by Icons8" },
-  { src: "/twitter-tiny.svg", alt: "Twitter Bird icon by Icons8" },
-  { src: "/instagram-tiny.svg", alt: "Instagram icon by Icons8" },
+  { src: "/social/facebook-tiny.svg", alt: "Facebook icon by Icons8" },
+  { src: "/social/twitter-tiny.svg", alt: "Twitter Bird icon by Icons8" },
+  { src: "/social/instagram-tiny.svg", alt: "Instagram icon by Icons8" },
 ];
 
 /**

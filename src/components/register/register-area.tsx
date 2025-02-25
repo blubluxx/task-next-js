@@ -18,7 +18,7 @@ const RegisterArea = () => {
       >
         <div className="sm:flex-1">
           <img
-            src="/register-area.webp"
+            src="/images/register-area.webp"
             alt="register"
             className="object-cover w-full h-full"
           />

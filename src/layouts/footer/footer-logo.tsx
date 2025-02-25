@@ -15,7 +15,7 @@ const FooterLogo = () => {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <img src="/logo.svg" alt="ofertirai-me-logo" />
+        <img src="/logo/logo.svg" alt="ofertirai-me-logo" />
       </div>
       <div>
         <p className="text-sm">

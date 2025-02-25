@@ -10,25 +10,25 @@ interface ILink {
 const links: ILink[] = [
   {
     title: "Facebook",
-    imageSrc: "/facebook.svg",
+    imageSrc: "/social/facebook.svg",
     imageAlt: "Facebook",
     href: "https://www.facebook.com/share/2qa1uLD5iymN5yit/",
   },
   {
     title: "Twitter",
-    imageSrc: "/twitter.svg",
+    imageSrc: "/social/twitter.svg",
     imageAlt: "Twitter",
     href: "https://x.com/Ofertirai_Me",
   },
   {
     title: "Instagram",
-    imageSrc: "/instagram.svg",
+    imageSrc: "/social/instagram.svg",
     imageAlt: "Instagram",
     href: "https://instagram.com/ofertirai.me",
   },
   {
     title: "LinkedIn",
-    imageSrc: "/linkedin.svg",
+    imageSrc: "/social/linkedin.svg",
     imageAlt: "LinkedIn",
     href: "https://linkedin.com",
   },
