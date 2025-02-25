@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import FooterLinks from "./footer-links";
 import Socials from "./socials";
@@ -16,7 +15,7 @@ const Footer = () => {
       >
         <div className="flex flex-col gap-8">
           <div className="">
-            <Image src="/logo.svg" alt="ofertirai-me-logo" />
+            <img src="/logo.svg" alt="ofertirai-me-logo" />
           </div>
           <div className="w-full">
             <p className="text-sm max-w-xs">

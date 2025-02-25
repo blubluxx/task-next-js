@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const benefits: string[] = [
   "Бърза и лесна регистрация – създай профил за минути",
   "Нови клиенти всеки ден – увеличи клиентската си база.",
@@ -15,7 +13,7 @@ const BenefitsList = () => {
         <h1 className="text-3xl lg:text-4xl font-semibold">
           Предимства които получаваш
         </h1>
-        <Image className="w-8 h-8" src="/arrow-icon.webp" alt="arrow-icon" />
+        <img className="w-8 h-8" src="/arrow-icon.webp" alt="arrow-icon" />
       </div>
 
       <ul className="flex flex-col gap-3 text-center md:text-xl lg:text-2xl md:mt-6">
