@@ -3,6 +3,7 @@ import Link from "next/link";
 import FooterLinks from "./footer-links";
 import Socials from "./socials";
 import FooterLogo from "./footer-logo";
+import FooterMobile from "../footer-mobile/footer-mobile";
 
 const Footer = () => {
   return (
@@ -23,6 +24,10 @@ const Footer = () => {
         </div>
         <div className="hidden md:flex">
           <Socials />
+        </div>
+
+        <div className="flex md:hidden h-full w-full">
+          <FooterMobile />
         </div>
       </div>
     </footer>
